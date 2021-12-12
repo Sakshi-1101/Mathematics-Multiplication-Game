@@ -1,0 +1,220 @@
+html{
+    height: 100% ;
+    background: radial-gradient(circle , rgb(199, 242, 243) , rgb(130, 224, 236) , rgb(18, 158, 214));
+    background: -webkit-radial-gradient(circle , rgb(199, 242, 243) , rgb(130, 224, 236) , rgb(18, 158, 214));
+    background: -o-radial-gradient(circle , rgb(199, 242, 243) , rgb(130, 224, 236) , rgb(18, 158, 214));
+    background: -moz-radial-gradient(circle , rgb(199, 242, 243) , rgb(130, 224, 236) , rgb(18, 158, 214));
+}
+
+#container{
+    height: 400px ;
+    width: 600px ;
+    background-color: rgb(29, 104, 173) ;
+    margin: 100px auto ;
+    padding: 20px ;
+    border-radius: 10px ;
+    box-shadow: -5px -5px 4px 1px cornsilk ;
+    -moz-box-shadow: -5px -5px 4px 1px cornsilk ;
+    -webkit-box-shadow: -5px -5px 4px 1px cornsilk ;
+    border: 2px solid rgb(247, 234, 181) ;
+    position: relative;
+}
+
+#timeremaining{
+    width : 160.5px ;
+    background-color: rgb(163, 219, 111);
+    color: rgb(3, 70, 3) ;
+    padding: 10px ;
+    border-radius: 5px ;
+    box-shadow: 2px 2px 4px 1px rgb(37, 100, 8) ;
+    -moz-box-shadow: 2px 2px 4px 1px rgb(37, 100, 8) ;
+    -webkit-box-shadow: 2px 2px 4px 1px rgb(37, 100, 8) ;
+    position: absolute;
+    float: left ;
+    /* bottom: 380px ; */
+    /* visibility: hidden; */
+    display: none;
+
+}
+
+#score{
+    background-color: khaki;
+    color: maroon ;
+    padding: 10px ;
+    border-radius: 5px ;
+    box-shadow: 2px 2px 4px 1px rgb(124, 100, 3) ;
+    -moz-box-shadow: 2px 2px 4px 1px rgb(124, 100, 3) ;
+    -webkit-box-shadow: 2px 2px 4px 1px rgb(124, 100, 3) ;
+    position: absolute;
+    left: 530px ;
+    float: right ;
+}
+
+#correct{
+    background-color: rgba(172, 255, 47, 0.719);
+    border: 2px double green;
+    border-radius: 5px ;
+    color: white ;
+    padding: 10px ;
+    position: absolute;
+    left : 300px ;
+    display: none;
+}
+
+#wrong{
+    background-color: rgba(252, 50, 50, 0.904);
+    border: 2px double maroon;
+    border-radius: 5px ;
+    color: white ;
+    padding: 10px ;
+    position: absolute;
+    left : 300px ;
+    display: none;
+}
+
+#question{
+    background-color: rgb(199, 242, 243);
+    box-shadow: 3px 3px 4px 1px rgb(23, 10, 97) ;
+    -moz-box-shadow: 3px 3px 4px 1px rgb(23, 10, 97) ;
+    -webkit-box-shadow: 3px 3px 4px 1px rgb(23, 10, 97) ;
+    width : 450px;
+    height: 150px ;
+    margin: 50px auto 10px auto;
+    font-size: 100px ;
+    font-family: cursive , sans-serif ;
+    text-align: center ;
+    color: rgb(23, 10, 97);
+    /* padding: 10px ; */
+}
+
+#instruction{
+    width: 450px;
+    height: 50px ;
+    background-color:rgb(141, 235, 236) ;
+    box-shadow: 3px 3px 4px 1px rgb(23, 10, 97) ;
+    -moz-box-shadow: 3px 3px 4px 1px rgb(23, 10, 97) ;
+    -webkit-box-shadow: 3px 3px 4px 1px rgb(23, 10, 97) ;
+    margin: 10px auto;
+    color: rgb(23, 10, 97);
+    font-size: 20px ;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center; /*align text horizontally*/
+    line-height: 50px ; /*align text vertically*/
+}
+
+#choices{
+    width: 450px ;
+    height: 90px ;
+    /* background-color: thistle; */
+    margin: 5px auto ;
+}
+
+.box{
+    width: 90px ;
+    height: 75px ;
+    background-color: white;
+    box-shadow: 3px 3px 4px 1px rgb(23, 10, 97) ;
+    -moz-box-shadow: 3px 3px 4px 1px rgb(23, 10, 97) ;
+    -webkit-box-shadow: 3px 3px 4px 1px rgb(23, 10, 97) ;
+    float: left ;
+    margin-right: 30px ;
+    cursor: pointer ;
+    text-align: center ;
+    line-height: 70px ;
+    font-weight: bold;
+    font-size: 25px ;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(23, 10, 97);
+    position: relative ;
+    transition: all 1s ;
+    -webkit-transition: all 1s ;
+    -moz-transition: all 1s ;
+    -o-transition: all 1s ;
+    -ms-transition: all 1s ;
+}
+
+#box4{
+    margin-right: 0;
+}
+
+.box:hover{
+    background-color:rgba(76, 200, 238, 0.842);
+    box-shadow: -3px 3px 4px 1px rgb(12, 20, 20) ;
+    -moz-box-shadow: -3px 3px 4px 1px rgb(12, 20, 20) ;
+    -webkit-box-shadow: -3px 3px 4px 1px rgb(12, 20, 20) ;
+    color: white ;
+}
+
+.box:active{
+    box-shadow: 0px 0px 0px 2px rgb(12, 20, 20) ;
+    -moz-box-shadow: 0px 0px 0px 2px rgb(12, 20, 20) ;
+    -webkit-box-shadow: 0px 0px 0px 2px rgb(12, 20, 20) ;
+    top: 5px ;
+}
+
+#startreset{
+    width: 100px ;
+    background-color: gainsboro;
+    border-radius: 7px ;
+    border: 2px solid black ;
+    box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.712);
+    -moz-box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.712);
+    -webkit-box-shadow: -3px 3px 4px 1px rgba(0, 0, 0, 0.712);
+    margin: 2px auto ;
+    position: relative;
+    text-align: center ;
+    color :rgb(12, 20, 20);
+    font-size: 17px ;
+    font-family: monospace;
+    font-weight: bold;
+    font-style: oblique;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 1s ;
+    -webkit-transition: all 1s ;
+    -moz-transition: all 1s ;
+    -o-transition: all 1s ;
+    -ms-transition: all 1s ;
+
+}
+
+#startreset:hover{
+    background-color:wheat;
+    box-shadow: -3px 3px 4px 1px rgb(80, 39, 1) ;
+    -moz-box-shadow: -3px 3px 4px 1px rgb(80, 39, 1) ;
+    -webkit-box-shadow: -3px 3px 4px 1px rgb(80, 39, 1) ;
+    color: rgb(80, 39, 1) ;
+    font-style: normal;
+    font-weight: bolder ;
+    text-shadow: 2px 2px 2px rgba(99, 6, 6, 0.438);
+}
+
+#startreset:active{
+    box-shadow: 0px 0px 0px 2px rgb(80, 39, 1) ;
+    -moz-box-shadow: 0px 0px 0px 2px rgb(80, 39, 1) ;
+    -webkit-box-shadow: 0px 0px 0px 2px rgb(80, 39, 1) ;
+    top: 5px ;
+}
+
+#gameOver{
+    height: 200px ;
+    width: 480px ;
+    background-color: rgb(219, 63, 94);
+    border: 10px outset rgb(128, 11, 34);
+    border-radius: 10px ;
+    color: whitesmoke ;
+    font-size: 40px ;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    text-shadow: 5px 5px 2px rgb(128, 8, 8);
+    -webkit-text-stroke: 2px black;
+    text-transform: uppercase;
+    /* padding: 2px ; */
+    position: absolute ;
+    top: 110px;
+    left: 70px ;
+    z-index: 2;
+    display: none;
+
+}
